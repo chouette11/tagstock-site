@@ -6,8 +6,14 @@ import CssBaseline from "@mui/material/CssBaseline";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
-import { Grid } from "@mui/material";
-import { color, height } from "@mui/system";
+import {
+  Card,
+  CardActionArea,
+  CardContent,
+  CardMedia,
+  Grid,
+} from "@mui/material";
+import Cards from "./compornent/Cards.tsx";
 
 interface Props {
   /**
@@ -48,7 +54,7 @@ export default function App(props: Props) {
         </AppBar>
       </ElevationScroll>
       <Toolbar />
-      <Box style={{width:"100%", height:"700px", backgroundColor:"red"}}>
+      <Box style={{ width: "100%", height: "700px", backgroundColor: "red" }}>
         <Grid
           container
           direction="row"
@@ -89,7 +95,11 @@ export default function App(props: Props) {
           paddingTop="40px"
         >
           <Box
-            style={{ height: "200px", width: "100px", backgroundColor: "white" }}
+            style={{
+              height: "200px",
+              width: "100px",
+              backgroundColor: "white",
+            }}
           ></Box>
           <Typography fontSize="40px">タスク追加を</Typography>
         </Grid>
@@ -101,27 +111,9 @@ export default function App(props: Props) {
           backgroundColor: "white",
         }}
       ></Box>
-      <Box
-        style={{
-          height: "400px",
-          maxWidth: "100%",
-          backgroundColor: "blue",
-        }}
-      ></Box>
-      <Box
-        style={{
-          height: "400px",
-          maxWidth: "100%",
-          backgroundColor: "white",
-        }}
-      ></Box>
-      <Box
-        style={{
-          height: "400px",
-          maxWidth: "100%",
-          backgroundColor: "blue",
-        }}
-      ></Box>
+      <Cards />
+      <Cards />
+      <Cards />
       <Box
         style={{ height: "120px", maxWidth: "100%", backgroundColor: "red" }}
       ></Box>
