@@ -8,7 +8,7 @@ import {
   Box,
 } from "@mui/material";
 
-export default function Cards() {
+export const Cards = () => {
   <Box
     style={{
       height: "400px",

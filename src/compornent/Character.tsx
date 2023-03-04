@@ -6,7 +6,7 @@ type FeatureProps = {
   description: string;
 };
 
-const Character = ({ icon, title, description }: FeatureProps) => {
+export const Character = ({ icon, title, description }: FeatureProps) => {
   return (
     <Box display="flex" flexDirection="column" alignItems="center" textAlign="center">
       <Box mb={2}>{icon}</Box>
@@ -17,5 +17,3 @@ const Character = ({ icon, title, description }: FeatureProps) => {
     </Box>
   );
 };
-
-export default Character;

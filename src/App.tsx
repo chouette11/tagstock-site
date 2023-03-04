@@ -1,12 +1,10 @@
 import * as React from "react";
-import Toolbar from "@mui/material/Toolbar";
-import CssBaseline from "@mui/material/CssBaseline";
-import useScrollTrigger from "@mui/material/useScrollTrigger";
-import AppFeatures from "./compornent/Features";
-import Footer from "./compornent/Footer";
-import Characters from "./compornent/Characters";
-import AppScreenshot from "./compornent/AppScreenShot";
-import Header from "./compornent/Header";
+import {Toolbar, CssBaseline, useScrollTrigger}  from "@mui/material";
+import {Features} from "./compornent/Features";
+import {Footer} from "./compornent/Footer";
+import {Characters} from "./compornent/Characters";
+import {AppScreenshot} from "./compornent/AppScreenShot";
+import {Header} from "./compornent/Header";
 
 interface Props {
   /**
@@ -33,7 +31,7 @@ function ElevationScroll(props: Props) {
   });
 }
 
-export default function App(props: Props) {
+export const App = (props: Props) => {
   return (
     <React.Fragment>
       <CssBaseline />
@@ -45,10 +43,10 @@ export default function App(props: Props) {
         title="タグスト"
         image="https://via.placeholder.com/150"
       ></AppScreenshot>
-      <AppFeatures id="feature1"></AppFeatures>
+      <Features id="feature1"></Features>
       <Characters></Characters>
-      <AppFeatures id="feature2"></AppFeatures>
-      <AppFeatures id="feature3"></AppFeatures>
+      <Features id="feature2"></Features>
+      <Features id="feature3"></Features>
       <Footer></Footer>
     </React.Fragment>
   );

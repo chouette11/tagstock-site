@@ -1,8 +1,8 @@
 import { Box } from "@mui/material";
-import Character from "./Character";
+import {Character} from "./Character";
 import { FaCheckSquare, FaCalendarAlt } from "react-icons/fa";
 
-function Characters() {
+export const Characters = () => {
   return (
     <Box
       sx={{
@@ -34,5 +34,3 @@ function Characters() {
     </Box>
   );
 }
-
-export default Characters;

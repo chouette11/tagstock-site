@@ -38,7 +38,7 @@ const NavBox = styled(Box)({
   alignItems: "center",
 });
 
-const Header = () => {
+export const Header = () => {
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     const id = event.currentTarget.getAttribute("href")!.substring(1);
     const element = document.getElementById(id);
@@ -71,5 +71,3 @@ const Header = () => {
     </HeaderBar>
   );
 };
-
-export default Header;

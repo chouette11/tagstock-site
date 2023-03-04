@@ -7,7 +7,7 @@ type Props = {
   imageUrl: string;
 };
 
-const Feature: React.FC<Props> = ({ title, description, imageUrl }) => {
+export const Feature: React.FC<Props> = ({ title, description, imageUrl }) => {
   return (
     <div style={{
         padding: "1rem",
@@ -26,5 +26,3 @@ const Feature: React.FC<Props> = ({ title, description, imageUrl }) => {
     </div>
   );
 };
-
-export default Feature;

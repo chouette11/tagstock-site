@@ -1,12 +1,12 @@
 import React from "react";
 import { Grid, Typography } from "@mui/material";
-import Feature from "./Feature";
+import {Feature} from "./Feature";
 
 type Props = {
   id: string;
 };
 
-const Features: React.FC<Props> = ({id}) => {
+export const Features: React.FC<Props> = ({id}) => {
   return (
     <div id={id}>
     <Grid direction="column">
@@ -40,5 +40,3 @@ const Features: React.FC<Props> = ({id}) => {
     </div>
   );
 };
-
-export default Features;

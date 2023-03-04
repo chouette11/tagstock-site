@@ -1,6 +1,6 @@
 import { Grid, Typography, Link } from '@mui/material';
 
-function Footer() {
+export const Footer = () => {
   return (
     <Grid
       container
@@ -31,5 +31,3 @@ function Footer() {
     </Grid>
   );
 }
-
-export default Footer;

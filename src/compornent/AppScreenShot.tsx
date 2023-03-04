@@ -6,7 +6,7 @@ interface AppScreenshotProps {
   image: string;
 }
 
-const AppScreenshot: React.FC<AppScreenshotProps> = ({ title, image }) => {
+export const AppScreenshot: React.FC<AppScreenshotProps> = ({ title, image }) => {
   return (
     <Grid container spacing={8} >
       <Grid item xs={12} sm={6}>
@@ -26,5 +26,3 @@ const AppScreenshot: React.FC<AppScreenshotProps> = ({ title, image }) => {
     </Grid>
   );
 };
-
-export default AppScreenshot;
