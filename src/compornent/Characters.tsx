@@ -1,4 +1,4 @@
-import { Grid, Typography, Box } from "@mui/material";
+import { Box } from "@mui/material";
 import Character from "./Character";
 import { FaCheckSquare, FaCalendarAlt } from "react-icons/fa";
 

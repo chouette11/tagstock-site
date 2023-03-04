@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Card, CardContent, CardMedia, Typography } from "@mui/material";
+import { Card, CardContent, CardMedia, Typography } from "@mui/material";
 
 type Props = {
   title: string;

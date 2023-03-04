@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Box, Grid, Paper } from "@mui/material";
+import { Typography, Grid } from "@mui/material";
 
 interface AppScreenshotProps {
   title: string;
