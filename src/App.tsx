@@ -13,7 +13,12 @@ import {
   CardMedia,
   Grid,
 } from "@mui/material";
-import Cards from "./compornent/Cards.tsx";
+import AppFeatures from "./compornent/Features";
+import Footer from "./compornent/Footer";
+import Cards from "./compornent/Cards";
+import Characters from "./compornent/Characters";
+import AppScreenshot from "./compornent/AppScreenShot";
+import Header from "./compornent/Header";
 
 interface Props {
   /**
@@ -45,78 +50,18 @@ export default function App(props: Props) {
     <React.Fragment>
       <CssBaseline />
       <ElevationScroll {...props}>
-        <AppBar>
-          <Toolbar>
-            <Typography variant="h6" component="div">
-              タグスト
-            </Typography>
-          </Toolbar>
-        </AppBar>
+        <Header></Header>
       </ElevationScroll>
       <Toolbar />
-      <Box style={{ width: "100%", height: "700px", backgroundColor: "red" }}>
-        <Grid
-          container
-          direction="row"
-          justifyContent="center"
-          alignItems="center"
-          spacing={8}
-        >
-          <Grid item>
-            <Container maxWidth="xs">
-              <Typography fontSize="56px">タスク追加を</Typography>
-              <Typography fontSize="56px">シンプルに</Typography>
-            </Container>
-          </Grid>
-          <Grid item>
-            <Box
-              sx={{
-                width: "300px",
-                height: "500px",
-                backgroundColor: "primary.dark",
-              }}
-            />
-          </Grid>
-        </Grid>
-      </Box>
-      <Box
-        style={{
-          height: "400px",
-          maxWidth: "100%",
-          backgroundColor: "blue",
-        }}
-      >
-        <Grid
-          container
-          direction="column"
-          justifyContent="center"
-          alignItems="center"
-          spacing={4}
-          paddingTop="40px"
-        >
-          <Box
-            style={{
-              height: "200px",
-              width: "100px",
-              backgroundColor: "white",
-            }}
-          ></Box>
-          <Typography fontSize="40px">タスク追加を</Typography>
-        </Grid>
-      </Box>
-      <Box
-        style={{
-          height: "400px",
-          maxWidth: "100%",
-          backgroundColor: "white",
-        }}
-      ></Box>
-      <Cards />
-      <Cards />
-      <Cards />
-      <Box
-        style={{ height: "120px", maxWidth: "100%", backgroundColor: "red" }}
-      ></Box>
+      <AppScreenshot
+        title="タグスト"
+        image="https://via.placeholder.com/150"
+      ></AppScreenshot>
+      <AppFeatures id="feature1"></AppFeatures>
+      <Characters></Characters>
+      <AppFeatures id="feature2"></AppFeatures>
+      <AppFeatures id="feature3"></AppFeatures>
+      <Footer></Footer>
     </React.Fragment>
   );
 }
