@@ -4,16 +4,16 @@ import { Card, CardContent, CardMedia, Typography } from "@mui/material";
 type Props = {
   title: string;
   description: string;
-  imageUrl: string;
+  image: string;
 };
 
-export const Feature: React.FC<Props> = ({ title, description, imageUrl }) => {
+export const Feature: React.FC<Props> = ({ title, description, image }) => {
   return (
     <div style={{
         padding: "1rem",
       }}>
-    <Card sx={{ maxWidth: 345 }}>
-      <CardMedia component="img" height="140" image={imageUrl} alt={title} />
+    <Card>
+      <CardMedia component="img" image={image} alt={title} height={240} width={400}/>
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           {title}
