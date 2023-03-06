@@ -1,10 +1,13 @@
 import * as React from "react";
-import {Toolbar, CssBaseline, useScrollTrigger}  from "@mui/material";
-import {Features} from "./compornent/Features";
-import {Footer} from "./compornent/Footer";
-import {Characters} from "./compornent/Characters";
-import {AppScreenshot} from "./compornent/AppScreenShot";
-import {Header} from "./compornent/Header";
+import { Toolbar, CssBaseline, useScrollTrigger } from "@mui/material";
+import { Features1 } from "./compornent/Features1";
+import { Footer } from "./compornent/Footer";
+import { Characters } from "./compornent/Characters";
+import { AppScreenshot } from "./compornent/AppScreenShot";
+import { Header } from "./compornent/Header";
+import top from "./image/top.jpg";
+import { Features2 } from "./compornent/Features2";
+import { Features3 } from "./compornent/Features3";
 
 interface Props {
   /**
@@ -39,15 +42,12 @@ export const App = (props: Props) => {
         <Header></Header>
       </ElevationScroll>
       <Toolbar />
-      <AppScreenshot
-        title="タグスト"
-        image="https://via.placeholder.com/150"
-      ></AppScreenshot>
-      <Features id="feature1"></Features>
-      <Characters></Characters>
-      <Features id="feature2"></Features>
-      <Features id="feature3"></Features>
-      <Footer></Footer>
+        <AppScreenshot title="タグスト" image={top} />
+        <Features1 id="feature1" />
+        <Characters />
+        <Features2 id="feature2"/>
+        <Features3 id="feature3"/>
+      <Footer />
     </React.Fragment>
   );
-}
+};
