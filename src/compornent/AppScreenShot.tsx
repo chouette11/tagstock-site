@@ -6,22 +6,32 @@ interface AppScreenshotProps {
   image: string;
 }
 
-export const AppScreenshot: React.FC<AppScreenshotProps> = ({ title, image }) => {
+export const AppScreenshot: React.FC<AppScreenshotProps> = ({
+  title,
+  image,
+}) => {
   return (
-    <Grid container spacing={8} >
-      <Grid item xs={12} sm={6}>
-        <Typography variant="h4" sx={{ fontWeight: "bold", mb: 2 }}>
-          My Awesome App
+    <Grid
+      container
+      marginTop={4}
+      direction="row"
+      justifyContent="space-around"
+      alignItems="center"
+      paddingTop={4}
+    >
+      <Grid item>
+        <Typography variant="h4" sx={{ fontWeight: "bold", fontSize: 56, }}>
+          タスク管理を
+        </Typography>
+        <Typography variant="h4" sx={{ fontWeight: "bold", fontSize: 56, }}>
+          シンプルに
         </Typography>
         <Typography variant="subtitle1" sx={{ mb: 2 }}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor
-          faucibus justo, ac volutpat sapien dictum non. Sed nec justo eu nibh
-          dignissim aliquet.
+          タップのみのタスク追加
         </Typography>
-    
       </Grid>
-      <Grid item xs={12} md={6} justifyContent="end">
-        <img src={image} alt={title} style={{ maxWidth: "100%" }} />
+      <Grid item>
+        <img src={image} alt={title} style={{ width: 200, }} />
       </Grid>
     </Grid>
   );
