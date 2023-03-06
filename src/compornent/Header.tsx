@@ -1,12 +1,9 @@
 import React from "react";
-import { styled } from "@mui/material/styles";
-import AppBar from "@mui/material/AppBar";
-import Toolbar from "@mui/material/Toolbar";
-import Button from "@mui/material/Button";
-import Box from "@mui/material/Box";
+import { styled, Grid, Box, AppBar, Toolbar, Button } from "@mui/material";
+import icon from "../image/icon.jpg";
 
 const HeaderBar = styled(AppBar)({
-  background: "#673ab7",
+  background: "white",
   paddingTop: "1rem",
   paddingBottom: "1rem",
   height: "80px",
@@ -20,15 +17,15 @@ const Title = styled(Box)({
     fontWeight: "bold",
     margin: 0,
     lineHeight: "1.2",
-    color: "#fff",
+    color: "black",
     fontFamily: "Montserrat, sans-serif",
   },
 });
 
 const NavButton = styled(Button)({
-  color: "#fff",
+  color: "black",
   "&:hover": {
-    backgroundColor: "rgba(255, 255, 255, 0.2)",
+    backgroundColor: "white",
   },
 });
 
@@ -43,30 +40,48 @@ export const Header = () => {
     const id = event.currentTarget.getAttribute("href")!.substring(1);
     const element = document.getElementById(id);
     const yOffset = -80;
-    const y = element!.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    const y =
+      element!.getBoundingClientRect().top + window.pageYOffset + yOffset;
     window.scrollTo({ top: y, behavior: "smooth" });
   };
 
   return (
-    <HeaderBar position="fixed">
+    <HeaderBar elevation={0}>
       <Toolbar>
-        <Title>
-          <h1>App Name</h1>
-        </Title>
-        <NavBox>
-          <NavButton href="#feature1" onClick={handleClick}>
-            Feature 1
-          </NavButton>
-          <NavButton href="#feature2" onClick={handleClick}>
-            Feature 2
-          </NavButton>
-          <NavButton href="#feature3" onClick={handleClick}>
-            Feature 3
-          </NavButton>
-          <NavButton href="#feature4" onClick={handleClick}>
-            Feature 4
-          </NavButton>
-        </NavBox>
+        <Grid
+          container
+          direction="row"
+          justifyContent="space-around"
+          alignItems="center"
+        >
+          <Grid item>
+            <Grid
+              container
+              direction="row"
+              justifyContent="center"
+              alignItems="center"
+              margin={4}
+            >
+              <img src={icon} alt="icon" style={{ width: 40 }} />
+              <Title>
+                <h1>タグスト</h1>
+              </Title>
+            </Grid>
+          </Grid>
+          <Grid item>
+            <NavBox>
+              <NavButton href="#feature1" onClick={handleClick}>
+                活用シーン
+              </NavButton>
+              <NavButton href="#feature2" onClick={handleClick}>
+                使い方
+              </NavButton>
+              <NavButton href="#feature3" onClick={handleClick}>
+                こだわり
+              </NavButton>
+            </NavBox>
+          </Grid>
+        </Grid>
       </Toolbar>
     </HeaderBar>
   );
