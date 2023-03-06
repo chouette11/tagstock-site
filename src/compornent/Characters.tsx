@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import {Character} from "./Character";
+import { Character } from "./Character";
 import { FaCheckSquare, FaCalendarAlt } from "react-icons/fa";
 
 export const Characters = () => {
@@ -33,4 +33,4 @@ export const Characters = () => {
       />
     </Box>
   );
-}
+};
