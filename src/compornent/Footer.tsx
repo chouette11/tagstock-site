@@ -1,11 +1,9 @@
-import { Grid, Typography, Link } from '@mui/material';
+import { Grid, Typography } from '@mui/material';
 
 export const Footer = () => {
   return (
     <Grid
       container
-      justifyContent="center"
-      alignItems="center"
       spacing={1}
       sx={{
         mt: '2rem',
@@ -15,19 +13,11 @@ export const Footer = () => {
         textAlign: 'center'
       }}
     >
-      <Grid item xs={12} md={6}>
+      <Grid item sx={{ml: 4}}>
         <Typography variant="body2">
           &copy; 2023 My Awesome App. All rights reserved.
         </Typography>
-      </Grid>
-      <Grid item xs={12} md={6}>
-        <Link href="#" sx={{ mx: 1, color: '#fff' }}>
-          Terms of Use
-        </Link>
-        <Link href="#" sx={{ mx: 1, color: '#fff' }}>
-          Privacy Policy
-        </Link>
-      </Grid>
+        </Grid>
     </Grid>
   );
 }
