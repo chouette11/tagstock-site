@@ -2,39 +2,6 @@ import React from "react";
 import { styled, Grid, Box, AppBar, Toolbar, Button } from "@mui/material";
 import icon from "../image/icon.jpg";
 
-const HeaderBar = styled(AppBar)({
-  background: "white",
-  paddingTop: "1rem",
-  paddingBottom: "1rem",
-  height: "80px",
-});
-
-const Title = styled(Box)({
-  flexGrow: 1,
-  textAlign: "center",
-  "& h1": {
-    fontSize: "2.5rem",
-    fontWeight: "bold",
-    margin: 0,
-    lineHeight: "1.2",
-    color: "black",
-    fontFamily: "Montserrat, sans-serif",
-  },
-});
-
-const NavButton = styled(Button)({
-  color: "black",
-  "&:hover": {
-    backgroundColor: "white",
-  },
-});
-
-const NavBox = styled(Box)({
-  display: "flex",
-  justifyContent: "flex-end",
-  alignItems: "center",
-});
-
 export const Header = () => {
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     const id = event.currentTarget.getAttribute("href")!.substring(1);
@@ -86,3 +53,36 @@ export const Header = () => {
     </HeaderBar>
   );
 };
+
+const HeaderBar = styled(AppBar)({
+  background: "white",
+  paddingTop: "1rem",
+  paddingBottom: "1rem",
+  height: "80px",
+});
+
+const Title = styled(Box)({
+  flexGrow: 1,
+  textAlign: "center",
+  "& h1": {
+    fontSize: "2.5rem",
+    fontWeight: "bold",
+    margin: 0,
+    lineHeight: "1.2",
+    color: "black",
+    fontFamily: "Montserrat, sans-serif",
+  },
+});
+
+const NavButton = styled(Button)({
+  color: "black",
+  "&:hover": {
+    backgroundColor: "white",
+  },
+});
+
+const NavBox = styled(Box)({
+  display: "flex",
+  justifyContent: "flex-end",
+  alignItems: "center",
+});
