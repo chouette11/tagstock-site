@@ -2,7 +2,6 @@ import * as React from "react";
 import { Toolbar, CssBaseline, useScrollTrigger } from "@mui/material";
 import { Features1 } from "./compornent/Features1";
 import { Footer } from "./compornent/Footer";
-import { Characters } from "./compornent/Characters";
 import { AppScreenshot } from "./compornent/AppScreenShot";
 import { Header } from "./compornent/Header";
 import top from "./image/top.jpg";
@@ -44,7 +43,6 @@ export const App = (props: Props) => {
       <Toolbar />
         <AppScreenshot title="タグスト" image={top} />
         <Features1 id="feature1" />
-        <Characters />
         <Features2 id="feature2"/>
         <Features3 id="feature3"/>
       <Footer />
