@@ -2,7 +2,7 @@ import React from "react";
 import { Grid, Typography } from "@mui/material";
 import { Feature } from "./Feature";
 import work from "../image/work.jpg";
-import free from "../image/free.jpg";
+import study from "../image/study.jpg";
 import student from "../image/student.jpg";
 
 type Props = {
@@ -28,22 +28,22 @@ export const Features1: React.FC<Props> = ({ id }) => {
         >
           <Grid item>
             <Feature
-              title="退勤後"
-              description="Description of Feature 1"
+              title="気になるツイートを見つけた時"
+              description="共有機能"
               image={work}
             />
           </Grid>
           <Grid item>
             <Feature
-              title="Feature 2"
-              description="Description of Feature 2"
-              image={free}
+              title="作業開始時"
+              description="自動スケジュール作成機能"
+              image={study}
             />
           </Grid>
           <Grid item>
             <Feature
-              title="Feature 3"
-              description="Description of Feature 3"
+              title="イベントポスターを見つけた時"
+              description="カメラでの追加機能"
               image={student}
             />
           </Grid>

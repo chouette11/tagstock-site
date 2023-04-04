@@ -15,7 +15,7 @@ export const Features3: React.FC<Props>  = ({id}) => {
           align="center"
           sx={{ fontWeight: "bold", my: 2 }}
         >
-          こだわり
+          実装予定
         </Typography>
         <Grid
           container
@@ -25,22 +25,22 @@ export const Features3: React.FC<Props>  = ({id}) => {
         >
           <Grid item>
             <Feature
-              title="Feature 1"
-              description="Description of Feature 1"
+              title="Googleカレンダーとの連携"
+              description="カレンダー画面"
               image="https://via.placeholder.com/150"
             />
           </Grid>
           <Grid item>
             <Feature
-              title="Feature 2"
-              description="Description of Feature 2"
+              title="タスク共有機能"
+              description="一緒に作業する時"
               image="https://via.placeholder.com/150"
             />
           </Grid>
           <Grid item>
             <Feature
-              title="Feature 3"
-              description="Description of Feature 3"
+              title="音声アシスタントとの連携"
+              description="Googleアシスタント、アレクサ"
               image="https://via.placeholder.com/150"
             />
           </Grid>
