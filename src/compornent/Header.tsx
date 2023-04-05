@@ -41,10 +41,10 @@ export const Header = () => {
                 活用シーン
               </NavButton>
               <NavButton href="#feature2" onClick={handleClick}>
-                使い方
+                使い方（動画）
               </NavButton>
               <NavButton href="#feature3" onClick={handleClick}>
-                こだわり
+                実装予定
               </NavButton>
             </NavBox>
           </Grid>
