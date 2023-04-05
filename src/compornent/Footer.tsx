@@ -1,4 +1,5 @@
-import { Grid, Typography } from '@mui/material';
+import styled from '@emotion/styled';
+import { Button, Grid } from '@mui/material';
 
 export const Footer = () => {
   return (
@@ -14,10 +15,11 @@ export const Footer = () => {
       }}
     >
       <Grid item sx={{ml: 4}}>
-        <Typography variant="body2">
-          &copy; 2023 My Awesome App. All rights reserved.
-        </Typography>
+        <TextButton variant='text' href='https://pocket-schedule-de.firebaseapp.com/'>プライバシーポリシー</TextButton>
         </Grid>
     </Grid>
   );
 }
+const TextButton = styled(Button)({
+  color: '#FFFFFF',
+});
