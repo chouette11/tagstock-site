@@ -20,18 +20,18 @@ export const AppScreenshot: React.FC<AppScreenshotProps> = ({
       paddingTop={4}
     >
       <Grid item>
-        <Typography variant="h4" sx={{ fontWeight: "bold", fontSize: 56, }}>
+        <Typography variant="h4" sx={{ fontWeight: "bold", fontSize: 64, }}>
           タスク管理を
         </Typography>
-        <Typography variant="h4" sx={{ fontWeight: "bold", fontSize: 56, }}>
+        <Typography variant="h4" sx={{ fontWeight: "bold", fontSize: 64, }}>
           シンプルに
         </Typography>
-        <Typography variant="subtitle1" sx={{ mb: 2 }}>
+        <Typography variant="subtitle1" sx={{ mb: 3 }}>
           タップのみのタスク追加
         </Typography>
       </Grid>
       <Grid item>
-        <img src={image} alt={title} style={{ width: 200, }} />
+        <img src={image} alt={title} style={{ width: 400, }} />
       </Grid>
     </Grid>
   );
