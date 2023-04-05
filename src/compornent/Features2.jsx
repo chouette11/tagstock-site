@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Typography } from "@mui/material";
+import { Grid, Typography, Card } from "@mui/material";
 import ReactFreezeframe from "react-freezeframe";
 import questionnaire from "../image/questionnaire.gif";
 import login from "../image/login.gif";
@@ -24,16 +24,24 @@ export const Features2 = ({ id }) => {
           alignItems="center"
         >
           <Grid item lg={2} xs={8} marginTop={2}>
-            <ReactFreezeframe src={questionnaire} />
+            <Card>
+              <ReactFreezeframe src={questionnaire} />
+            </Card>
           </Grid>
           <Grid item lg={2} xs={8} marginTop={2}>
-            <ReactFreezeframe src={login} />
+            <Card>
+              <ReactFreezeframe src={login} />
+            </Card>
           </Grid>
           <Grid item lg={2} xs={8} marginTop={2}>
-            <ReactFreezeframe src={task} />
+            <Card>
+              <ReactFreezeframe src={task} />
+            </Card>
           </Grid>
           <Grid item lg={2} xs={8} marginTop={2}>
-            <ReactFreezeframe src={schedule} />
+            <Card>
+              <ReactFreezeframe src={schedule} />
+            </Card>
           </Grid>
         </Grid>
       </Grid>
